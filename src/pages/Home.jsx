@@ -1,11 +1,19 @@
-import React from 'react'
-import GörevEkle from "../components/GörevEkle"
-import GörevleriGöster from '../components/GörevleriGöster'
+import React, { useState } from "react";
+import GorevEkle from "../components/GorevEkle";
+import GorevleriGoster from "../components/GorevleriGoster";
+
+import Data from "../helper/Data"
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
 
-export default Home
+const[todos,setTodos]=useState(JSON.parse(localStorage.getItem("gorevler"))||Data)
+ 
+  return (
+    <div>
+     <GorevEkle todos={todos} setTodos={setTodos}/>
+     <GorevleriGoster todos={todos} setTodos={setTodos}/>
+    </div>
+  );
+};
+
+export default Home;
