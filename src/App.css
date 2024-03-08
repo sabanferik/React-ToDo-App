@@ -4,31 +4,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 body {
-  height: 100vh;
+  /* height: 100%; */
   font-family: "Poppins", sans-serif;
   /* background-image: linear-gradient(to top, #baafd9 0%, #97d9e1 100%); */
   background-image: url(https://cdn.pixabay.com/photo/2020/05/02/03/14/beach-5119723_1280.jpg);
-  background-repeat: no-repeat; 
-  background-size:  cover;
-   
-  border:15px solid #7ACFF5;
-  background-position: center;
- 
-  
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  /* border: 15px solid #7acff5; */
+  background-position: center;
+  background-attachment: fixed;
 }
+.görevler-container{
+  max-height: 150px;
+  overflow: auto;
+}
+.görevler-container::-webkit-scrollbar{
+  display: none;
+}
+
 .container {
-  background-image: linear-gradient(
-    to bottom ,
-    #7ACFF5,
-    #013059
-  
-  );
+  background-image: linear-gradient(to bottom, #7acff5, #013059);
   margin: 3rem auto;
   max-width: 600px;
+  max-height: 600px;
+  width: 450px;
+  height:auto;
   padding: 2rem;
   border-radius: 15px;
   opacity: 0.8;
@@ -37,7 +42,6 @@ body {
 .header {
   text-align: center;
   margin: 1rem;
-   
 }
 
 .btn {
@@ -47,21 +51,19 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 15px;
-  padding: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
 .form-control {
-  margin: 20px 0;
+  margin: 1rem 0;
 }
-
-
 
 .form-control input {
   width: 100%;
-  height: 40px;
-  padding: 1rem;
+  height:1.5rem;
+  padding: 0.5rem;
   font-size: 17px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
@@ -93,10 +95,9 @@ body {
   margin: 10px;
   padding: 10px 20px;
   border-radius: 20px;
-
 }
 
- h3 {
+h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;

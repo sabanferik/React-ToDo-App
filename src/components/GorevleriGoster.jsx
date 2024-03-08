@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
+import "../App.css";
 const GorevleriGoster = ({ todos, setTodos }) => {
   const deleteTodo = (rmv) => {
     //!1.yol
@@ -31,7 +32,7 @@ const GorevleriGoster = ({ todos, setTodos }) => {
   };
 
   return (
-    <div>
+    <div className="görevler-container">
       {todos.map((x) => {
         return (
           <div
