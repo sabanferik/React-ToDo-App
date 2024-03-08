@@ -12,9 +12,11 @@ body {
   /* background-image: linear-gradient(to top, #baafd9 0%, #97d9e1 100%); */
   background-image: url(https://cdn.pixabay.com/photo/2020/05/02/03/14/beach-5119723_1280.jpg);
   background-repeat: no-repeat; 
-  background-size: cover;
-  border:5px solid #7ACFF5;
+  background-size:  cover;
+   
+  border:15px solid #7ACFF5;
   background-position: center;
+ 
   
 
 }
@@ -75,16 +77,22 @@ body {
 .gorev {
   background: #f4f4f4;
   background: rgb(193, 193, 61);
-  margin: 5px;
-  padding: 10px 20px;
+  border-top: 10px solid #f56607;
+  border-bottom: 10px solid #f56607;
+  margin: 10px;
+  padding: 5px 20px;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .done {
-  border-left: 10px solid rgb(102, 18, 77);
+  border-left: 10px solid #05c7f2;
+  border-right: 10px solid #05c7f2;
   text-decoration: line-through;
-  background-color: darkgrey;
+  background-color: #0477bf;
+  margin: 10px;
   padding: 10px 20px;
+  border-radius: 20px;
 
 }
 
